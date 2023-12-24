@@ -1,1 +1,0 @@
-$env:DOWNLOAD_URL = ""
