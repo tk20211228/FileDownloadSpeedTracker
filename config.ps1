@@ -1,1 +1,1 @@
-$env:DOWNLOAD_URL = ""
+$env:DOWNLOAD_URL = "TEST"

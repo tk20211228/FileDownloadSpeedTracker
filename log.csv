@@ -1,10 +1,1 @@
 Timestamp,Downloaded File Name,Total Downloaded Time (seconds),Downloaded File Size (bytes),Average Speed (bytes/sec),Status,Error Message
-2023/12/20 6:29:41,SDMProxyProfileCreator.zip,,41809,248863.539637273,Success,
-2023/12/20 6:32:14,SDMProxyProfileCreator.zip,0.1722795,41809,242681.22440569,Success,
-2023/12/20 6:37:01,SDMProxyProfileCreator.zip,0.1815031,41809,230348.682749771,Success,
-2023/12/20 6:41:46,,0.1730038,0,0,Failed,? [System.Web.HttpUtility] ?????????
-2023/12/20 6:45:12,SDMProxyProfileCreator.zip,0.2074888,41809,201500.032772853,Success,
-2023/12/20 7:00:23,SDMProxyProfileCreator.zip,0.1659542,41809,251930.954444057,Success,
-2023/12/20 7:00:40,SDMProxyProfileCreator.zip,0.1643211,41809,254434.762182093,Success,
-2023/12/20 7:15:06,SDMProxyProfileCreator.zip,0.1707281,41809,244886.459815344,Success,
-2023/12/20 7:15:11,SDMProxyProfileCreator.zip,0.172185,41809,242814.414728345,Success,
