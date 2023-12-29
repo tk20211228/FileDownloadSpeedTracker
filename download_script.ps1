@@ -1,5 +1,6 @@
-$logPath = "log.csv"
-$errorLogPath = "error_log.txt"
+# $PSScriptRootを使用して、スクリプトのあるディレクトリにログファイルパスを作成
+$logPath = Join-Path -Path $PSScriptRoot -ChildPath "log.csv"
+$errorLogPath = Join-Path -Path $PSScriptRoot -ChildPath "error_log.txt"
 
 
 function Initialize-Log {
@@ -58,14 +59,15 @@ function Write-Log {
 
     try {
         $log = "$($logData.StartTime),$($logData.DownloadedFileName),$($logData.TotalDownloadTime),$($logData.DownloadedFileSize),$($logData.AverageSpeed),$($logData.Status),$($logData.ErrorMessage)"
-        Add-Content -Path "log.csv" -Value $log -Encoding ASCII
+        Add-Content -Path $logPath -Value $log -Encoding ASCII
     } catch {
         $errorMessage = $_.Exception.Message
         Write-ErrorLog -errorMessage $errorMessage
     }
 }
 # メインの処理
-. .\config.ps1
+. $PSScriptRoot\config.ps1  # $PSScriptRootを使用してconfig.ps1のパスを指定
+
 Initialize-Log
 $logData = Get-FileFromUrl -url $env:DOWNLOAD_URL -filename $env:FILE_NAME
 Write-Log -logData $logData
